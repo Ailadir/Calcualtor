@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* CSS RESET */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.calculator-body {
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  width: 400px;
+  height: 100%;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-rows: 5;
+}
+.btn {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn-big {
+  grid-column-start: span 2;
+}
+
+.screen {
+  border: 1px solid black;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+}
