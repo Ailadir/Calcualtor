@@ -22,9 +22,11 @@ const btnSubstract = document.getElementById('minus');
 const btnDot = document.getElementById('dot');
 const btnZero = document.getElementById('zero');
 const btnEqual = document.getElementById('equal');
+
 //
 // Functionality of number buttons.
 //
+
 bodyElement.addEventListener('keydown', (event) => {
   console.log(event.key);
   if (isFinite(event.key)) {
@@ -35,45 +37,8 @@ bodyElement.addEventListener('keydown', (event) => {
 });
 
 bodyElement.addEventListener('click', (event) => {
-  switch (event.target) {
-    case btnOne:
-      screenCurrent.textContent += 1;
-      break;
-    case btnTwo:
-      screenCurrent.textContent += 2;
-      break;
-    case btnThree:
-      screenCurrent.textContent += 3;
-      break;
-    case btnFour:
-      screenCurrent.textContent += 4;
-      break;
-    case btnFive:
-      screenCurrent.textContent += 5;
-      break;
-    case btnSix:
-      screenCurrent.textContent += 6;
-      break;
-    case btnSeven:
-      screenCurrent.textContent += 7;
-      break;
-    case btnEight:
-      screenCurrent.textContent += 8;
-      break;
-    case btnNine:
-      screenCurrent.textContent += 9;
-      break;
-    case btnZero:
-      screenCurrent.textContent += 0;
-      break;
-    case btnDot:
-      screenCurrent.textContent += '.';
-      break;
-    default:
-      break;
-  }
-  btnsNumbers.forEach((item) => (item.disabled = true));
-  // btnsOperations.forEach((item) => (item.disabled = false));
+  if (Number(event.target.textContent) || event.target.textContent == '.')
+    screenCurrent.textContent += event.target.textContent;
 });
 
 //
@@ -112,7 +77,8 @@ bodyElement.addEventListener('click', (event) => {
       break;
 
     case btnEqual:
-      numbers = screenCurrent.textContent.split(/\W+/);
+      // numbers = screenCurrent.textContent.split(/(?!^)[(\W)?]/);
+      numbers = screenCurrent.textContent.includes(/[]/);
 
       switch (operator) {
         case '%':
@@ -127,9 +93,6 @@ bodyElement.addEventListener('click', (event) => {
         case '+':
           result = Number(numbers[0]) + Number(numbers[1]);
           break;
-        case '*':
-          result = Number(numbers[0]) * Number(numbers[1]);
-          break;
         case '-':
           result = Number(numbers[0]) - Number(numbers[1]);
           break;
@@ -142,6 +105,6 @@ bodyElement.addEventListener('click', (event) => {
       if (!Number.isInteger(result)) result = result.toFixed(2);
       screenCurrent.textContent = result;
   }
-  btnsNumbers.forEach((item) => (item.disabled = false));
+  // btnsNumbers.forEach((item) => (item.disabled = false));
   // btnsOperations.forEach((item) => (item.disabled = true));
 });
