@@ -46,7 +46,11 @@ Users should be able to:
 
 ### What I learned
 
-
+- Implementetions of different type of objects in functions
+- Usefulness of comments
+- Importance of reworking your code after taking a break
+- How to bind few functions on one button
+- Improved knowledge of grid and flex
 
 ### Useful resources
 
