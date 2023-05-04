@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![ScreenShot](https://raw.githubusercontent.com/Ailadir/Calcualtor/main/screenshot.png)
 
 ### Links
 
@@ -58,4 +58,4 @@ Users should be able to:
 ## Author
 
 - Website - [Araz Schwarz](https://www.linkedin.com/in/dmdschwarz/)
-- TOP - [TheOdinProject](https://www.theodinproject.com/
+- TOP - [TheOdinProject](https://www.theodinproject.com/)
