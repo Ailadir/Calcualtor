@@ -27,7 +27,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-<img src="(https://raw.githubusercontent.com/Ailadir/Calcualtor/main/screenshot.png" width="300">
+<img src="https://raw.githubusercontent.com/Ailadir/Calcualtor/main/screenshot.png" width="300">
 
 ### Links
 
