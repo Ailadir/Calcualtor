@@ -61,15 +61,26 @@ bodyElement.addEventListener('keydown', (event) => {
 operatEl.forEach((item) =>
   item.addEventListener('click', (event) => {
     // Checking if we need to get reesult when typing math operation button or equal button
+    // First 'IF' part is help to working with first negative value(if you got it from last operations)
     if (
       Array.from(btnsOperations).includes(event.target) &&
       operator !== '' &&
-      !numbers.includes('') &&
+      numbers[0].includes('') &&
+      numbers.length === 3
+    ) {
+      screenPrevious.textContent = screenCurrent.textContent;
+      numbers.shift();
+      numbers[0] = Number(numbers[0]) * -1;
+      calc();
+    }
+    //  Second part with 'Else if' working in all other cases(If first number is not negative)
+    else if (
+      Array.from(btnsOperations).includes(event.target) &&
+      operator !== '' &&
+      numbers[1].includes('') &&
       numbers.length === 2
     ) {
-      numbers = screenCurrent.textContent.split(/[%\/*+-]/);
       screenPrevious.textContent = screenCurrent.textContent;
-
       calc();
     } else {
       // If for updating screen with numbers that person typing
