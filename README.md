@@ -23,7 +23,7 @@ This is a solution to the [Calculator Project](hhttps://www.theodinproject.com/l
 
 Users should be able to:
 
-- Use calculator for all regular mathematical opeartion
+- Use calculator for all regular mathematical opeartion (some operations negative value still not working correctly)
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
