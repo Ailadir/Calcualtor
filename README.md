@@ -57,5 +57,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Araz Schwarz(https://www.linkedin.com/in/dmdschwarz/)
+- Website - [Araz Schwarz](https://www.linkedin.com/in/dmdschwarz/)
 - TOP - [TheOdinProject](https://www.theodinproject.com/
