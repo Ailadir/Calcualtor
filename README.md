@@ -24,7 +24,7 @@ This is a solution to the [Calculator Project](hhttps://www.theodinproject.com/l
 
 Users should be able to:
 
-- Use calculator for all regular mathematical opeartion
+- Use calculator for all regular mathematical opeartion (some operations negative value still not working correctly)
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
@@ -33,8 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Calculator](https://ailadir.github.io/Calcualtor/)
 
 ### Built with
 
@@ -45,6 +44,12 @@ Users should be able to:
 - Native JavaScript
 
 ### What I learned
+
+- Implementetions of different type of objects in functions
+- Usefulness of comments
+- Importance of reworking your code after taking a break
+- How to bind few functions on one button
+- Improved knowledge of grid and flex
 
 ### Useful resources
 
